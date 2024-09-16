@@ -1,0 +1,195 @@
+* {
+    margin: 0;
+    font-family: Arial;
+    box-sizing: border-box;
+}
+
+.navbar {
+    height: 65px;
+    background-color: #0f1111;
+    color: white;
+    display: flex;
+    align-items: center;
+   
+    padding: 0 20px; /* Added padding for spacing */
+}
+
+.nav-logo {
+    height: 55px;
+    width: 174px;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+     background-image: url(Shopping_logo.png);/* Ensure the path is correct */
+    height: 55px;
+    background-size: cover;
+    width: 100%;
+}
+
+.nav-search {
+    margin-left: 20px; /* Adding space after the logo */
+    display: flex;
+    align-items: center; /* Centering search bar vertically */
+    
+   flex-grow: 1; /* Makes the search bar expand to take space */
+}
+
+.form-inline {
+    display: flex;
+    width: 100%;
+    max-width: 560px;
+    
+}
+
+.form-control {
+    width: 100%; /* Full width for search input */
+    padding: 5px;
+    /* border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px; */
+    border: none;
+}
+
+.find {
+    padding: 5px 10px;
+    background-color: #f0c14b;
+    border: 1px solid #a88734;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+   
+}
+
+/* .find:hover{
+    border:2px solid white;
+} */
+.search-select{
+    background-color: #e8e7e7;
+    padding: 5px 3px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius:5px ;
+    text-align: center;
+    
+    
+}
+
+
+.nav-address {
+    display: flex;
+    align-items: center;
+    padding-left: 20px; /* Adjust spacing between items */
+}
+
+.border {
+    border: 2px solid transparent;
+}
+
+.border:hover {
+    border: 2px solid rgb(242, 200, 95);
+    border-radius: 5px;
+}
+
+.nav-signin{
+    font-weight: bold;
+    
+}
+.nav-signin:hover{
+   padding: 5px  ;
+    border :2px solid white;
+    border-radius: 5px;
+    
+}
+.nav-cart{
+    font-weight: bold;
+    margin-left: 10px
+}
+.nav-cart:hover{
+    padding: 5px  ;
+    border :2px solid white;
+    border-radius: 5px;
+}
+.nav-customercare{
+    font-weight: bold;
+    margin-right: 10px;
+}
+.nav-customercare:hover{
+    padding: 5px  ;
+    border :2px solid white;
+    border-radius: 5px;
+    
+}
+.home{
+   
+    margin-right: 10px;
+}
+.home:hover{
+    padding: 5px  ;
+    border :2px solid white;
+    border-radius: 5px;
+}
+
+
+
+
+
+
+/* Panel */
+.panel{
+    display: flex;
+    background-color: gray;
+    height: 40px;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.panel-all{
+    display: flex;
+   
+}
+.panel-all p{
+    margin-left:5px;
+}
+.panel-options p{
+    display: inline;
+    margin-left: 12px;
+}
+.panel-options{
+    
+    width: 75%;
+    font: size 0.85rem;
+}
+.panel-border:hover{
+    border: 1px solid rgb(252, 252, 252);
+    border-radius: 5px;
+    padding: 9px;
+}
+.panel-deals{
+    font-size: 0.9em;
+    font-weight: 700;
+}
+
+
+
+
+/*   body section*/
+
+.body-section{
+    background-image: url(hero_image.jpg);
+    background-size:cover;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.body-msg{
+    background-color: white;
+    color: black;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.85rem;
+    width: 80%;
+    margin-bottom: 25px;
+}
