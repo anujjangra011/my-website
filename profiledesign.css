@@ -179,44 +179,18 @@
 
                                             /*   body section*/
 
-.body-section{
-    background-image: url(hero_image.jpg);
-    background-size:cover;
-    height: 300px;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
+.top-heading{
+    font-weight: lighter;
+    font-size: xx-large;
+    font-family:Arial, Helvetica, sans-serif;
+    margin-left: 120px;
+    margin-top: 50px;
+    margin-bottom: 30px;
 }
-.body-msg{
-    background-color: white;
-    color: black;
-    height: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 0.85rem;
-    width: 80%;
-    margin-bottom: 25px;
-}
-
-                                           /*shop-section*/
-
-.shop-section{
-    display: flex;
-    justify-content: space-evenly;
-    background-image: url(shopping_section.jpg);
-    background-size: cover;
-    height:300px;
-    margin-bottom: 100px;
-
-}
-.shop-section-2{
-    display: flex;
-    justify-content: space-evenly;
-    background-size: cover;
-    height:300px;
-    margin-bottom: 100px;
-
+.sub-heading{
+    font-family:Arial, Helvetica, sans-serif;
+    margin-left: 20px;
+    font-weight: lighter;
 }
 
 .shop-section-3{
@@ -227,53 +201,39 @@
     margin-bottom: 100px;
 
 }
-
 .box {
-    height: 380px;
+    display: flex;
+    height: 100px;
     border:2px solid rgb(255, 255, 255);
     width: 23%;
     background-color: white ;
     padding: 20px 0px 15px;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border: 0.5px solid rgb(124, 124, 124);
+    border-radius: 8px;
 
 }
-.box1:hover{
-    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+.box:hover{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
-.box2:hover{
-    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
-}.box3:hover{
-    box-shadow: rgb(38, 57, 77) 0ch 20px 30px -10px;
-}.box4:hover{
-    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
-}.box5:hover{
-    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
-}.box6:hover{
-    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
-}.box7:hover{
-    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
-}.box8:hover{
-    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
-}.box9:hover{
-    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
-}.box10:hover{
-    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
-}.box11:hover{
-    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
-}.box12:hover{
-    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+
+.login-logo{
+    display: flex;
 }
-.box-image{
-    height: 240px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    margin-left: 15px;
-    margin-right:15px;
-    background-size:cover;
+.login-logo{
+    background-image: url(sign-in-lock.png);
+    background-size: cover;
+    display: flex;
+    height: 40px;
+    width: 50px;
+    align-items: center;
+
 }
-.heading{
-    margin-left: 20px;
-    width: 21%;
-    box-shadow: rgb(38, 57, 77) 0px 20px 30px -8px;
-margin-bottom: 20px;
+.contact-us{
+    background-image: url(contact_us.png);
+    background-size: cover;
+    display: flex;
+    height: 45px;
+    width: 50px;
+    align-items: center;
+
 }
