@@ -1,3 +1,20 @@
+@media (max-width: 768px) {
+    .shop-section, .shop-section-2, .shop-section-3 {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+
+    .box {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+}
+
+
+
+
+
 * {
     margin: 0;
     font-family: Arial;
@@ -63,6 +80,15 @@
     font-weight: bold;
    
 }
+.find {
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.find:hover {
+    background-color: #ddb347;
+    border-color: #8f6d2e;
+}
+
 
 /* .find:hover{
     border:2px solid white;
@@ -75,6 +101,10 @@
     text-align: center;
     
     
+}
+a:focus, button:focus, .find:focus {
+    outline: 2px solid #f0c14b;
+    outline-offset: 2px;
 }
 
 
@@ -105,7 +135,7 @@
 }
 .nav-cart{
     font-weight: bold;
-    margin-left: 10px
+    margin-left: 5px
 }
 .nav-cart:hover{
     padding: 5px  ;
@@ -276,4 +306,147 @@
     width: 21%;
     box-shadow: rgb(38, 57, 77) 0px 20px 30px -8px;
 margin-bottom: 20px;
+}
+
+
+
+                                                  /*mobile view */
+
+
+/* Initially hide the nav links and display the hamburger menu */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background-color: #5B5EA6; /* Same color as the navbar */
+        width: 100%;
+        position: absolute;
+        top: 65px; /* Right below the navbar */
+        left: 0;
+        z-index: 1000;
+    }
+
+    .nav-links a {
+        padding: 15px;
+        text-align: left;
+        border-bottom: 1px solid white;
+        color: white;
+    }
+
+    /* Show hamburger menu on small screens */
+    .hamburger-menu {
+        display: block;
+        cursor: pointer;
+        font-size: 24px;
+        color: white;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+    }
+
+    /* Hide the hamburger menu on larger screens */
+    .hamburger-menu i {
+        color: white;
+    }
+
+    /* Toggle for hamburger menu */
+    .nav-links.active {
+        display: flex;
+    }
+}
+
+/* Hide hamburger menu on larger screens */
+@media (min-width: 769px) {
+    .hamburger-menu {
+        display: none;
+    }
+
+    .nav-links {
+        display: flex;
+        align-items: center;
+    }
+}
+
+
+
+
+
+
+/* General mobile styles */
+@media (max-width: 768px) {
+
+    /* Navbar adjustments */
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        height: auto;
+        padding: 10px;
+    }
+
+    .nav-logo, .nav-search, .home, .nav-signin, .nav-cart, .nav-customercare {
+        margin-bottom: 10px;
+    }
+
+    .nav-search {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .form-inline {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .form-control {
+        padding: 5px;
+    }
+
+    .search-select {
+        width: 20%;
+    }
+
+    .panel {
+        flex-direction: column;
+        align-items: flex-start;
+        height: auto;
+    }
+
+    .panel-options p {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    /* Body section */
+    .body-section {
+        height: 200px;
+    }
+
+    .body-msg {
+        width: 90%;
+        font-size: 0.75rem;
+    }
+
+    /* Shop sections */
+    .shop-section, .shop-section-2, .shop-section-3 {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+
+    .box {
+        width: 90%;
+        margin-bottom: 20px;
+        height: auto; /* Let boxes adjust height automatically */
+    }
+
+    .box-image {
+        height: 200px; /* Reduce the size of images */
+    }
+
+    .heading {
+        width: 100%;
+        text-align: center;
+        font-size: 1.5rem;
+        margin-bottom: 20px;
+    }
 }
